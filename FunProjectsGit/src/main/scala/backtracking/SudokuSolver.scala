@@ -10,6 +10,7 @@ import scala.collection.JavaConverters._
  */
 object SudokuSolver {
   // Sample input
+  // This is a 9x9 matrix
   val grid = Array[Array[Int]](
     Array[Int](3, 0, 6, 5, 0, 8, 4, 0, 0),
     Array[Int](0, 2, 0, 0, 0, 0, 0, 0, 0),

@@ -22,6 +22,7 @@ object SudokuSolver {
     Array[Int](0, 0, 0, 0, 0, 0, 0, 7, 4),
     Array[Int](4, 0, 5, 2, 0, 6, 3, 0, 0))
 
+  // Find next unfilled position
   def getNextPos(grid: MutableList[MutableList[Int]]): (Boolean, (Int, Int)) = {
     grid.zipWithIndex.filter(t => (t._1.filter(_ != 0)).size < t._1.length) match {
       case fg if (fg.isEmpty) => (true, (-1, -1))

@@ -9,6 +9,7 @@ import scala.collection.JavaConverters._
  * Created by abhijeet on 21-02-2015.
  */
 object SudokuSolver {
+  // Sample input
   val grid = Array[Array[Int]](
     Array[Int](3, 0, 6, 5, 0, 8, 4, 0, 0),
     Array[Int](0, 2, 0, 0, 0, 0, 0, 0, 0),

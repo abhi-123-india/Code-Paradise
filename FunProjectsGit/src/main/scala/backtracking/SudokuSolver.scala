@@ -37,6 +37,7 @@ object SudokuSolver {
     (for (i <- 0 until grid.length) yield grid(i)(col)).filter(_ != 0).toList
   }
 
+  // Print helper
   def printGrid(grid: MutableList[mutable.MutableList[Int]]): String = {
     grid.map(_.mkString(",")).mkString("\n")
   }
